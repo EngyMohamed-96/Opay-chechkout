@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+    <title> O-pay checkout</title>
+</head>
+
+<body>
+    <header>
+
+            <nav class="navbar ">
+                <div class="container">
+                <a class="navbar-brand " href="#">
+                    <svg id="opay-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136.54" height="56.223" viewBox="0 0 136.54 56.223">
+                    <defs>
+                      <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.816" gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#108868"/>
+                        <stop offset="1" stop-color="#1dcf9f"/>
+                      </linearGradient>
+                    </defs>
+                    <path id="Path_1" data-name="Path 1" d="M72.669,9.4H63.219V33.153h2v-9.14h7.454c4.925,0,8.053-2.8,8.053-7.272S77.594,9.4,72.669,9.4ZM72.6,22.278H65.215V11.2H72.6c4.06,0,6.056,2,6.056,5.538C78.725,20.209,76.662,22.278,72.6,22.278Zm41-5.938-5.724,14.278L102.219,16.34h-2.2l6.855,16.813-1.4,3.469c-.532,1.268-1.2,1.8-2.2,1.8a3.173,3.173,0,0,1-1.2-.267l-.333,1.8a4.273,4.273,0,0,0,1.6.334c1.863,0,2.995-.934,3.793-3.069l8.585-20.883Zm-18.5,3a7.338,7.338,0,0,0-5.857-2.936c-4.459,0-8.12,3.936-8.12,8.74s3.66,8.74,8.12,8.74A7.338,7.338,0,0,0,95.1,30.951V33.42h1.93V16.807H95.1Zm-5.857,12.61c-3.394,0-6.189-3.069-6.189-6.872s2.8-6.872,6.189-6.872,6.189,3.069,6.189,6.872S92.7,31.952,89.241,31.952ZM47.379,8C40.524,8,35,13.871,35,21.01c0,7.206,5.524,13.01,12.379,13.01,6.789,0,12.379-5.871,12.379-13.01S54.167,8,47.379,8Zm0,24.085c-5.724,0-10.449-4.937-10.449-11.075,0-6.071,4.659-11.075,10.449-11.075,5.724,0,10.449,4.937,10.449,11.075C57.828,27.081,53.1,32.085,47.379,32.085Z" transform="translate(20.811 1.572)" fill="#210f60"/>
+                    <path id="Path_2" data-name="Path 2" d="M28.642,35.875a10.258,10.258,0,0,1-6.673,2.552c-4.866,0-9.037-3.628-10.805-8.793h0a23.565,23.565,0,0,1-.726-5.831,23.854,23.854,0,0,1,.285-3.684C12.138,14.157,16.637,9.8,21.969,9.8a10.758,10.758,0,0,1,8.372,4.309,16.043,16.043,0,0,1,3.336,10A15.411,15.411,0,0,1,28.642,35.875ZM44.431,22.687a23.692,23.692,0,0,0-.27-2.628A21.979,21.979,0,0,0,33.334,4.909l-.056-.025V4.878A22.393,22.393,0,0,0,22.254,2H22.1a22.4,22.4,0,0,0-5.133.593l-.049.012-.215.053a22.11,22.11,0,0,0-5.435,2.2l-.141.08-.022.013A21.881,21.881,0,0,0,0,23.944V58.223H2.974a8.144,8.144,0,0,0,8.179-8.109V42.962a22.344,22.344,0,0,0,9.217,2.844l.046,0c.13.011.261.021.392.029q.233.015.468.026l.129,0c.118,0,.236.009.354.011s.249,0,.373,0h.132c.162,0,.323,0,.483-.006s.307-.009.46-.015h.021A22.339,22.339,0,0,0,36,41.2a21.989,21.989,0,0,0,7.371-10.326,23.233,23.233,0,0,0,1.047-5.79c.005-.2.009-.4.009-.6q0-.528-.026-1.049c.017-.174.026-.351.026-.53Z" transform="translate(0 -2)" fill="#179070" fill-rule="evenodd"/>
+                    <path id="Path_3" data-name="Path 3" d="M27.455,43.925c-7.677,0-14.165-6.024-16.277-14.3a23.566,23.566,0,0,1-.726-5.831,23.856,23.856,0,0,1,.285-3.684C12.2,10.758,19.127,3.671,27.455,3.671a14.583,14.583,0,0,1,5.048.9,6.921,6.921,0,0,0,.776.31V4.878A22.393,22.393,0,0,0,22.254,2H22.1a22.4,22.4,0,0,0-5.133.593l-.049.012-.215.053a22.11,22.11,0,0,0-5.435,2.2l-.141.08-.022.013A21.881,21.881,0,0,0,0,23.944V58.223H2.974a8.144,8.144,0,0,0,8.179-8.109V42.962a22.344,22.344,0,0,0,9.217,2.844l.046,0c.13.011.261.021.392.029q.233.015.468.026l.129,0c.118,0,.236.009.354.011s.249,0,.373,0h.132c.162,0,.323,0,.483-.006s.307-.009.46-.015h.021A22.339,22.339,0,0,0,36,41.2,14.971,14.971,0,0,1,27.455,43.925Z" transform="translate(0 -2)" fill="#1dcf9f" fill-rule="evenodd"/>
+                    <path id="Path_4" data-name="Path 4" d="M39.291,30.384a23.457,23.457,0,0,0,1.047-5.82c.005-.2.009-.4.009-.6q0-.53-.026-1.054c.017-.175.026-.353.026-.533v-.221a23.967,23.967,0,0,0-.271-2.642A22.086,22.086,0,0,0,29.25,4.287l-.056-.025a6.91,6.91,0,0,1-.776-.311,14.517,14.517,0,0,0-5.048-.907c-8.327,0-15.256,7.123-16.718,16.527C8.068,13.579,12.567,9.2,17.9,9.2a10.741,10.741,0,0,1,8.372,4.331,16.178,16.178,0,0,1,3.336,10.056,15.527,15.527,0,0,1-5.035,11.822A10.229,10.229,0,0,1,17.9,37.973c-4.866,0-9.038-3.647-10.805-8.838C9.206,37.449,15.694,43.5,23.371,43.5a14.917,14.917,0,0,0,8.549-2.74A22.1,22.1,0,0,0,39.291,30.384Z" transform="translate(4.089 -1.359)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+                  </svg>
+                  </a>
+                <a class="navbar-brand" href="#">
+                    Our Solutions
+                   
+                    </a>
+                   
+                  
+
+<!--                           
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.917" height="48.636" viewBox="0 0 53.917 48.636">
+                                <g id="Group_16629" data-name="Group 16629" transform="translate(-0.584 -2.29)">
+                                  <path id="Path_22637" data-name="Path 22637" d="M6.13,41.5C6.13,30.8.584,23.444.584,18.285S3.55,2.29,27.284,2.29,54.5,16.867,54.5,22.541C54.5,49.115,6.13,60.466,6.13,41.5Z" fill="#efefef"/>
+                                  <path id="Path_22639" data-name="Path 22639" d="M30.184,41.578H13.761a3.011,3.011,0,0,1-3.011-3.011V9.761A3.011,3.011,0,0,1,13.761,6.75H30.184a3.011,3.011,0,0,1,3.011,3.011V38.568A3.011,3.011,0,0,1,30.184,41.578Z" transform="translate(5.57 2.444)" fill="#f3f3f1"/>
+                                </g>
+                                <path id="Path_22641" data-name="Path 22641" d="M33.195,25.25v3.189a3.006,3.006,0,0,1-3,3H13.753a3.006,3.006,0,0,1-3-3V25.25Z" transform="translate(4.986 10.29)" fill="#2fdf84" opacity="0"/>
+                                <path id="Path_22646" data-name="Path 22646" d="M30.6,43.15H14.172A4.176,4.176,0,0,1,10,38.978V10.172A4.176,4.176,0,0,1,14.172,6H30.594a4.177,4.177,0,0,1,4.173,4.172V38.978A4.176,4.176,0,0,1,30.6,43.15ZM14.172,8.322a1.852,1.852,0,0,0-1.85,1.85V38.978a1.852,1.852,0,0,0,1.85,1.85H30.594a1.852,1.852,0,0,0,1.85-1.85V10.172a1.852,1.852,0,0,0-1.85-1.85Z" transform="translate(4.575 -0.257)"/>
+                                <path id="Path_22647" data-name="Path 22647" d="M26.459,24.622H14.637A1.16,1.16,0,0,1,13.5,23.7l-1.477-6.966a1.159,1.159,0,0,1,1.135-1.4H27.329l.96-3.769,2.249.573L27.583,23.747a1.158,1.158,0,0,1-1.124.875ZM15.578,22.3h9.978l1.183-4.644H14.594Z" transform="translate(5.671 2.792)"/>
+                                <path id="Path_22648" data-name="Path 22648" d="M16.548,24.1A1.548,1.548,0,1,1,18.1,22.548,1.549,1.549,0,0,1,16.548,24.1Z" transform="translate(7.315 7.962)"/>
+                                <path id="Path_22649" data-name="Path 22649" d="M20.548,24.1A1.548,1.548,0,1,1,22.1,22.548,1.549,1.549,0,0,1,20.548,24.1Z" transform="translate(9.507 7.962)"/>
+                              </svg>
+           
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.424" height="48.191" viewBox="0 0 53.424 48.191">
+                                <path id="Path_22689" data-name="Path 22689" d="M6.079,41.145c0-10.609-5.5-17.894-5.5-23.006S3.523,2.29,27.04,2.29,54.008,16.733,54.008,22.356C54.01,48.686,6.079,59.933,6.079,41.145Z" transform="translate(-0.584 -2.29)" fill="#efefef"/>
+                                <path id="Path_22692" data-name="Path 22692" d="M38.192,36.99H9.818A3.067,3.067,0,0,1,6.75,33.922V14.75H41.26V33.922A3.067,3.067,0,0,1,38.192,36.99Z" transform="translate(2.707 4.361)" fill="#f3f3f1"/>
+                                <path id="Path_22698" data-name="Path 22698" d="M18.586,30.27h-6.9A2.687,2.687,0,0,1,9,27.586v-6.9A2.687,2.687,0,0,1,11.684,18h6.9a2.687,2.687,0,0,1,2.684,2.684v6.9A2.687,2.687,0,0,1,18.586,30.27Zm-6.9-9.969a.384.384,0,0,0-.383.383v6.9a.384.384,0,0,0,.383.383h6.9a.384.384,0,0,0,.383-.383v-6.9a.384.384,0,0,0-.383-.383Z" transform="translate(3.908 6.095)"/>
+                                <path id="Path_22699" data-name="Path 22699" d="M24.117,28.048a1.15,1.15,0,0,1-.86-.387L20.189,24.21l1.719-1.528L24.057,25.1l4.518-5.81L30.392,20.7l-5.368,6.9a1.149,1.149,0,0,1-.87.443h-.037Z" transform="translate(9.88 6.784)"/>
+                                <path id="Path_22700" data-name="Path 22700" d="M38.592,41.743H10.218A4.221,4.221,0,0,1,6,37.525V12.218A4.221,4.221,0,0,1,10.218,8H38.592a4.221,4.221,0,0,1,4.218,4.218V37.525A4.221,4.221,0,0,1,38.592,41.743ZM10.218,10.3A1.92,1.92,0,0,0,8.3,12.218V37.525a1.92,1.92,0,0,0,1.917,1.917H38.592a1.92,1.92,0,0,0,1.917-1.917V12.218A1.92,1.92,0,0,0,38.592,10.3Z" transform="translate(2.307 0.758)"/>
+                                <path id="Path_22702" data-name="Path 22702" d="M11,6h2.3v9.2H11Z" transform="translate(4.976 -0.31)"/>
+                                <path id="Path_22703" data-name="Path 22703" d="M23.5,6h2.3v9.2H23.5Z" transform="translate(11.648 -0.31)"/>
+                              </svg> -->
+                               
+                    
+                
+               
+                <a class="navbar-brand" href="#">Developer</a>
+                <a class="navbar-brand" href="#">Pricing</a>
+                <a class="navbar-brand" href="#">Company
+
+                    <div class="btn-group com">
+                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                     
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end">
+                          <li> <button class="dropdown-item" type="button"><i class="fas fa-users"></i> About Us</button> </li>
+                          <li><button class="dropdown-item" type="button"> <i class="fas fa-phone-alt"></i>Contact Us </button></li>
+                         
+                        </ul>
+                      </div>
+                </a>
+           
+
+          
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="28.001" height="18.345" viewBox="0 0 28.001 18.345">
+                        <g id="united-kingdom" transform="translate(0 -88.275)">
+                          <path id="Path_22630" data-name="Path 22630" d="M25.9,88.276H2.1a2.1,2.1,0,0,0-2.1,2.1v14.151a2.1,2.1,0,0,0,2.1,2.1H25.9a2.1,2.1,0,0,0,2.1-2.1V90.373A2.1,2.1,0,0,0,25.9,88.276Z" transform="translate(0 -0.001)" fill="#41479b"/>
+                          <path id="Path_22631" data-name="Path 22631" d="M27.972,90.025a2.1,2.1,0,0,0-2.068-1.75h-.546l-8.944,5.86v-5.86H11.587v5.86l-8.944-5.86H2.1a2.1,2.1,0,0,0-2.068,1.75l7.644,5.008H0v4.828H7.673L.029,104.87A2.1,2.1,0,0,0,2.1,106.62h.546l8.944-5.86v5.86h4.828v-5.86l8.944,5.86H25.9a2.1,2.1,0,0,0,2.068-1.75l-7.644-5.008H28V95.034H20.327Z" fill="#f5f5f5"/>
+                          <g id="Group_15511" data-name="Group 15511" transform="translate(0 88.275)">
+                            <path id="Path_22632" data-name="Path 22632" d="M15.449,88.276h-2.9V96H0v2.9H12.552v7.724h2.9V98.9H28V96H15.449Z" transform="translate(0 -88.276)" fill="#ff4b55"/>
+                            <path id="Path_22633" data-name="Path 22633" d="M10.448,309.662l14.673-9.524h-2.55L9.224,308.8A3.019,3.019,0,0,0,10.448,309.662Z" transform="translate(-8.499 -291.511)" fill="#ff4b55"/>
+                            <path id="Path_22634" data-name="Path 22634" d="M316.51,300.138h-2.55l14.211,9.225a3.028,3.028,0,0,0,.966-1.028Z" transform="translate(-301.533 -291.511)" fill="#ff4b55"/>
+                            <path id="Path_22635" data-name="Path 22635" d="M4.049,96.914l12.4,8.052H19L4.948,95.842A3.027,3.027,0,0,0,4.049,96.914Z" transform="translate(-3.731 -95.247)" fill="#ff4b55"/>
+                            <path id="Path_22636" data-name="Path 22636" d="M302.688,100.161l13.371-8.68a3.02,3.02,0,0,0-1.235-.854l-14.687,9.534Z" transform="translate(-288.798 -90.442)" fill="#ff4b55"/>
+                          </g>
+                        </g>
+                   
+                    </svg>
+                    <div class="btn-group">
+                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                     
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-start">
+                          <li><button class="dropdown-item" type="button">Arabic</button></li>
+                          <li><button class="dropdown-item" type="button">English </button></li>
+                         
+                        </ul>
+                      </div> 
+
+                <a class="navbar-brand active" href="#">LOGIN </a>
+                <a class="navbar-brand Sign-up" href="#">Start NOW</a>
+       
+        </div>
+        </nav>
+       
+        <div class="container d-flex">
+        <div class="row">
+            <div class="col-12 col-md-5 data">
+                <h1>Smart Dashboard</h1>
+                <p>A smart innovative dashboard that will help you to drive your  business to success,display data , 
+                    track and report performance to have a deep understanding of your business analytics.</p>
+                <div class="Sign-up">Start NOW</div>
+                <h1 class="slogan">QUICK.</h1>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="img-container">
+                    <img src="imgs/Group 15512.png"
+                        alt="dashboard">
+                        
+                </div>
+       
+            </div>
+           
+        </div>
+            
+        </div>
+    </header>
+
+      <div class="second_section">
+        <div class="container txt-container">
+        
+          <div class="row">
+
+            <div class="col-5">
+            <h2> <span> Intgreted kit </span>with payments<br> and payout solutions </h2>
+            <p>Bringing together all the required tools to accept payments and pay out internationally.
+              <b> Opay’s</b>  products offer a variety of integrated solutions to better fit your business.</p>
+              <div class="Sign-up">Start NOW</div>
+            </div>
+
+            <div class="col-7 img-con">
+              <img src="imgs/Group 15549.png" alt="integrated">
+            </div>
+
+          </div>
+        </div>
+
+              </div>
+      
+              
+      <div class="third-section">
+        <div class="container ">
+        
+          <div class="row">
+    <h2 class="text-center">Our Solutions fit all your needs</h2>
+            <div class="col-6 card">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+                  <defs>
+                    <filter id="Ellipse_1107" x="0" y="0" width="128" height="128" filterUnits="userSpaceOnUse">
+                      <feOffset dy="3" input="SourceAlpha"/>
+                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                      <feFlood flood-opacity="0.161"/>
+                      <feComposite operator="in" in2="blur"/>
+                      <feComposite in="SourceGraphic"/>
+                    </filter>
+                  </defs>
+                  <g id="Group_15524" data-name="Group 15524" transform="translate(-268 -2265)">
+                    <g transform="matrix(1, 0, 0, 1, 268, 2265)" filter="url(#Ellipse_1107)">
+                      <circle id="Ellipse_1107-2" data-name="Ellipse 1107" cx="55" cy="55" r="55" transform="translate(9 6)" fill="#fff"/>
+                    </g>
+                    <g id="_052-smartphone" data-name="052-smartphone" transform="translate(275.224 2255.698)">
+                      <path id="Path_21297" data-name="Path 21297" d="M49.992,66.472A5.825,5.825,0,0,1,44.166,72.3H13.577A5.825,5.825,0,0,1,7.75,66.472v-53.9A5.825,5.825,0,0,1,13.577,6.75H44.166a5.825,5.825,0,0,1,5.827,5.827Z" transform="translate(25.165 30.778)" fill="#f3f3f1"/>
+                      <path id="Path_21298" data-name="Path 21298" d="M54.079,19.577V22.49H14.75V19.577a5.844,5.844,0,0,1,5.827-5.827H48.253A5.844,5.844,0,0,1,54.079,19.577Z" transform="translate(38.558 44.17)" fill="#f3f3f1"/>
+                      <path id="Path_21299" data-name="Path 21299" d="M9.75,6.75h1.457a4.371,4.371,0,0,1,4.37,4.37,2.914,2.914,0,0,0,2.913,2.913H31.6a2.914,2.914,0,0,0,2.913-2.913,4.372,4.372,0,0,1,4.37-4.37H9.75Z" transform="translate(28.991 30.778)" fill="#2fdf84"/>
+                      <path id="Path_21300" data-name="Path 21300" d="M54.079,16.75v10.2a5.844,5.844,0,0,1-5.827,5.827H20.577a5.844,5.844,0,0,1-5.827-5.827V16.75Z" transform="translate(38.558 49.91)" fill="#2fdf84"/>
+                      <path id="Path_21301" data-name="Path 21301" d="M14.3,66.472v-53.9A5.825,5.825,0,0,1,20.131,6.75H13.577A5.825,5.825,0,0,0,7.75,12.577v53.9A5.825,5.825,0,0,0,13.577,72.3h6.555A5.825,5.825,0,0,1,14.3,66.472Z" transform="translate(25.165 30.778)" fill="#d5dbe1"/>
+                      <path id="Path_21302" data-name="Path 21302" d="M27.131,13.75H20.577a5.844,5.844,0,0,0-5.827,5.827V22.49H21.3V19.577A5.844,5.844,0,0,1,27.131,13.75Z" transform="translate(38.558 44.17)" fill="#d5dbe1"/>
+                      <path id="Path_21303" data-name="Path 21303" d="M21.175,11.12A4.372,4.372,0,0,0,16.8,6.75H10.25a4.371,4.371,0,0,1,4.37,4.37,2.914,2.914,0,0,0,2.913,2.913h6.555A2.914,2.914,0,0,1,21.175,11.12Z" transform="translate(29.948 30.778)" fill="#00b871"/>
+                      <path id="Path_21304" data-name="Path 21304" d="M21.3,26.946V16.75H14.75v10.2a5.844,5.844,0,0,0,5.827,5.827h6.555A5.844,5.844,0,0,1,21.3,26.946Z" transform="translate(38.558 49.91)" fill="#00b871"/>
+                      <path id="Path_21305" data-name="Path 21305" d="M33.034,17.653H19.925a5.1,5.1,0,0,1-5.1-5.1,2.189,2.189,0,0,0-2.185-2.185H11.185a2.185,2.185,0,0,1,0-4.37h1.457A6.565,6.565,0,0,1,19.2,12.555a.729.729,0,0,0,.728.728h13.11a.729.729,0,0,0,.728-.728A6.565,6.565,0,0,1,40.318,6h1.457a2.185,2.185,0,1,1,0,4.37H40.318a2.19,2.19,0,0,0-2.185,2.185A5.1,5.1,0,0,1,33.034,17.653Z" transform="translate(27.556 29.343)"/>
+                      <path id="Path_21306" data-name="Path 21306" d="M45.6,75.918H15.011A8.018,8.018,0,0,1,7,67.907v-53.9A8.018,8.018,0,0,1,15.011,6H45.6a8.018,8.018,0,0,1,8.011,8.011v4.37h-4.37v-4.37A3.647,3.647,0,0,0,45.6,10.37H15.011a3.647,3.647,0,0,0-3.642,3.642v53.9a3.647,3.647,0,0,0,3.642,3.642H45.6a3.647,3.647,0,0,0,3.642-3.642V63.718h4.37v4.189A8.018,8.018,0,0,1,45.6,75.918Z" transform="translate(23.73 29.343)"/>
+                      <path id="Path_21307" data-name="Path 21307" d="M49.688,42.133H22.011A8.018,8.018,0,0,1,14,34.121V21.011A8.018,8.018,0,0,1,22.011,13H49.688A8.018,8.018,0,0,1,57.7,21.011v13.11A8.018,8.018,0,0,1,49.688,42.133ZM22.011,17.37a3.647,3.647,0,0,0-3.642,3.642v13.11a3.647,3.647,0,0,0,3.642,3.642H49.688a3.647,3.647,0,0,0,3.642-3.642V21.011a3.647,3.647,0,0,0-3.642-3.642Z" transform="translate(37.123 42.735)"/>
+                      <path id="Path_21308" data-name="Path 21308" d="M55.514,20.37H16.185a2.185,2.185,0,0,1,0-4.37H55.514a2.185,2.185,0,0,1,0,4.37Z" transform="translate(37.123 48.475)"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            
+            <h3> Online Payments </h3>
+            <h6> <span> Cashless</span>
+              payments for everyone. </h6>
+            <p>Accept payments anywhere, everywhere.
+               Move your money around the world easily with the latest technologies introduced to drive better performance for your business. </p>
+              <div class="bttn" >Learn more >></div>
+            </div>
+
+            <div class="col-6 img-container">
+              <img src="imgs/payments.png" alt="payments">
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-6 img-container ">
+              <img class="change" src="imgs/Invoices.png" alt="Invoices">
+            </div>
+
+            <div class="col-6 card ch">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+                  <defs>
+                    <filter id="Ellipse_1107" x="0" y="0" width="128" height="128" filterUnits="userSpaceOnUse">
+                      <feOffset dy="3" input="SourceAlpha"/>
+                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                      <feFlood flood-opacity="0.161"/>
+                      <feComposite operator="in" in2="blur"/>
+                      <feComposite in="SourceGraphic"/>
+                    </filter>
+                  </defs>
+                  <g id="Group_15525" data-name="Group 15525" transform="translate(-1041 -3266)">
+                    <g transform="matrix(1, 0, 0, 1, 1041, 3266)" filter="url(#Ellipse_1107)">
+                      <circle id="Ellipse_1107-2" data-name="Ellipse 1107" cx="55" cy="55" r="55" transform="translate(9 6)" fill="#fff"/>
+                    </g>
+                    <g id="_050-list" data-name="050-list" transform="translate(1079.954 3293.606)">
+                      <path id="Path_21311" data-name="Path 21311" d="M55.667,12.316V63.8A5.582,5.582,0,0,1,50.1,69.364H23.664V61.015A5.582,5.582,0,0,0,18.1,55.45H9.75V12.316A5.582,5.582,0,0,1,15.316,6.75H50.1A5.582,5.582,0,0,1,55.667,12.316Z" transform="translate(-7.663 -4.663)" fill="#f3f3f1"/>
+                      <path id="Path_21312" data-name="Path 21312" d="M23.664,29.816v8.349L9.75,24.25H18.1A5.582,5.582,0,0,1,23.664,29.816Z" transform="translate(-7.663 26.537)" fill="#2fdf84"/>
+                      <path id="Path_21313" data-name="Path 21313" d="M39.187,19.49H15.533a2.784,2.784,0,0,1-2.783-2.783V12.533A2.784,2.784,0,0,1,15.533,9.75H39.187a2.784,2.784,0,0,1,2.783,2.783v4.174A2.784,2.784,0,0,1,39.187,19.49Z" transform="translate(-2.314 0.686)" fill="#2fdf84"/>
+                      <path id="Path_21314" data-name="Path 21314" d="M21.577,6.75H15.316A5.582,5.582,0,0,0,9.75,12.316V55.45h6.261V12.316A5.582,5.582,0,0,1,21.577,6.75Z" transform="translate(-7.663 -4.663)" fill="#d5dbe1"/>
+                      <path id="Path_21315" data-name="Path 21315" d="M16.011,24.25H9.75L23.664,38.164V31.9Z" transform="translate(-7.663 26.537)" fill="#00b871"/>
+                      <path id="Path_21316" data-name="Path 21316" d="M19.011,16.707V12.533A2.784,2.784,0,0,1,21.794,9.75H15.533a2.784,2.784,0,0,0-2.783,2.783v4.174a2.784,2.784,0,0,0,2.783,2.783h6.261A2.784,2.784,0,0,1,19.011,16.707Z" transform="translate(-2.314 0.686)" fill="#00b871"/>
+                      <path id="Path_21317" data-name="Path 21317" d="M25.751,39.5H21.577V31.153A3.483,3.483,0,0,0,18.1,27.674H9.75V23.5H18.1a7.659,7.659,0,0,1,7.653,7.653Z" transform="translate(-7.663 25.2)"/>
+                      <path id="Path_21318" data-name="Path 21318" d="M51.438,72.788H25a2.078,2.078,0,0,1-1.475-.612L9.612,58.262A2.078,2.078,0,0,1,9,56.787V13.653A7.659,7.659,0,0,1,16.653,6H51.438a7.659,7.659,0,0,1,7.653,7.653V65.135A7.659,7.659,0,0,1,51.438,72.788ZM25.867,68.614H51.438a3.483,3.483,0,0,0,3.479-3.479V13.653a3.483,3.483,0,0,0-3.479-3.479H16.653a3.483,3.483,0,0,0-3.479,3.479V55.921Z" transform="translate(-9 -6)"/>
+                      <path id="Path_21319" data-name="Path 21319" d="M40.524,22.914H16.87A4.875,4.875,0,0,1,12,18.044V13.87A4.875,4.875,0,0,1,16.87,9H40.524a4.875,4.875,0,0,1,4.87,4.87v4.174A4.875,4.875,0,0,1,40.524,22.914ZM16.87,13.174a.7.7,0,0,0-.7.7v4.174a.7.7,0,0,0,.7.7H40.524a.7.7,0,0,0,.7-.7V13.87a.7.7,0,0,0-.7-.7Z" transform="translate(-3.651 -0.651)"/>
+                      <path id="Path_21320" data-name="Path 21320" d="M13,16H40.828v4.174H13Z" transform="translate(-1.869 11.828)"/>
+                      <path id="Path_21321" data-name="Path 21321" d="M13,19.5H40.828v4.174H13Z" transform="translate(-1.869 18.068)"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            <div class="ch-txt">
+              <h3>Invoicing </h3>
+              <h6> 
+                Create and send 
+                <span>  in minutes. </span> </h6>
+              <p>Create a link, share and you are good to go.
+                 Payment links offer you the easiest way to online transactions without needing a website! </p>
+                <div class="bttn" >Learn more >></div>
+            </div>
+         
+            </div>
+
+            
+          </div>
+
+
+          <div class="row">
+                    <div class="col-6 card">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+                          <defs>
+                            <filter id="Ellipse_1107" x="0" y="0" width="128" height="128" filterUnits="userSpaceOnUse">
+                              <feOffset dy="3" input="SourceAlpha"/>
+                              <feGaussianBlur stdDeviation="3" result="blur"/>
+                              <feFlood flood-opacity="0.161"/>
+                              <feComposite operator="in" in2="blur"/>
+                              <feComposite in="SourceGraphic"/>
+                            </filter>
+                          </defs>
+                          <g id="Group_15537" data-name="Group 15537" transform="translate(-849 -3672)">
+                            <g transform="matrix(1, 0, 0, 1, 849, 3672)" filter="url(#Ellipse_1107)">
+                              <circle id="Ellipse_1107-2" data-name="Ellipse 1107" cx="55" cy="55" r="55" transform="translate(9 6)" fill="#fff"/>
+                            </g>
+                            <g id="_037-credit_card" data-name="037-credit card" transform="translate(846.81 3642.068)">
+                              <path id="Path_21274" data-name="Path 21274" d="M75.977,59.716H13.5A6.752,6.752,0,0,1,6.75,52.962V17.5A6.752,6.752,0,0,1,13.5,10.75H75.977A6.752,6.752,0,0,1,82.731,17.5V52.962A6.752,6.752,0,0,1,75.977,59.716Z" transform="translate(20.973 55.715)" fill="#f3f3f1"/>
+                              <path id="Path_21275" data-name="Path 21275" d="M6.75,13.75H82.731V23.881H6.75Z" transform="translate(20.973 62.846)" fill="#2fdf84"/>
+                              <path id="Path_21276" data-name="Path 21276" d="M14.348,52.962V17.5A6.752,6.752,0,0,1,21.1,10.75H13.5A6.752,6.752,0,0,0,6.75,17.5V52.962A6.752,6.752,0,0,0,13.5,59.716h7.6A6.752,6.752,0,0,1,14.348,52.962Z" transform="translate(20.973 55.715)" fill="#d5dbe1"/>
+                              <path id="Path_21277" data-name="Path 21277" d="M6.75,13.75h7.6V23.881H6.75Z" transform="translate(20.973 62.846)" fill="#00b871"/>
+                              <path id="Path_21278" data-name="Path 21278" d="M77.76,64.031H15.287A9.294,9.294,0,0,1,6,54.744V19.287A9.294,9.294,0,0,1,15.287,10H77.76a9.294,9.294,0,0,1,9.287,9.287V54.744A9.294,9.294,0,0,1,77.76,64.031ZM15.287,15.065a4.227,4.227,0,0,0-4.221,4.221V54.744a4.227,4.227,0,0,0,4.221,4.221H77.76a4.227,4.227,0,0,0,4.221-4.221V19.287a4.227,4.227,0,0,0-4.221-4.221Z" transform="translate(19.19 53.932)"/>
+                              <path id="Path_21279" data-name="Path 21279" d="M84.514,28.2H8.533A2.534,2.534,0,0,1,6,25.663V15.533A2.534,2.534,0,0,1,8.533,13H84.514a2.534,2.534,0,0,1,2.533,2.533V25.663A2.534,2.534,0,0,1,84.514,28.2ZM11.065,23.131H81.981V18.065H11.065Z" transform="translate(19.19 61.063)"/>
+                              <path id="Path_21280" data-name="Path 21280" d="M14.065,32.508H9V28.287A9.294,9.294,0,0,1,18.287,19H42.769v5.065H18.287a4.227,4.227,0,0,0-4.221,4.221Z" transform="translate(26.321 75.325)"/>
+                            </g>
+                          </g>
+                        </svg>
+                        
+                      </div>
+                    
+                    <h3>Payouts </h3>
+                    <h6> <span>  Secured and easy </span>
+                     money collection. </h6>
+                    <p>OPay offers you the payout service to 
+                      collect your money easily and in a flexible way.</p>
+                      <div class="bttn" >Learn more >></div>
+                    </div>
+        
+                    <div class="col-6 img-container">
+                      <img src="imgs/Invoices.png" alt="Invoices">
+                    </div>
+                  </div>
+
+        </div>
+              </div>
+
+
+              
+              
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='./js/app.js'></script>
+</body>
+
+</html>

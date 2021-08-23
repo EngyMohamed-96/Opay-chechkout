@@ -1,0 +1,284 @@
+body {
+  background-image: url("../imgs/Group 15511.png");
+  background-size: contain;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+
+header .dropdown-menu {
+  margin-top: 70%;
+}
+
+header .dropdown-item {
+  color: #2C3E50;
+  text-align: center;
+}
+
+header .dropdown-item:hover {
+  color: #1DCF9F;
+  background-color: #E8FFF9;
+}
+
+header .btn-group,
+header .btn-group-vertical {
+  margin-left: -1.875rem;
+}
+
+header .btn-group:focus,
+header .btn-group-vertical:focus {
+  border: none;
+}
+
+header .btn-check:focus + .btn,
+header .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .navbar {
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+header .navbar .btn-group.com,
+header .navbar .btn-group-vertical.com {
+  margin-left: -0.625rem;
+}
+
+header .navbar .btn-group.com:focus,
+header .navbar .btn-group-vertical.com:focus {
+  border: none;
+}
+
+header .navbar .fa,
+header .navbar .fas {
+  margin-right: 15px;
+  color: #1DCF9F;
+}
+
+header .navbar a {
+  text-decoration: none;
+  color: #2C3E50;
+  font-size: 0.9rem;
+}
+
+header .navbar a.active {
+  color: #1DCF9F;
+  font-weight: bold;
+  padding-left: 3.125rem;
+}
+
+header .navbar a:hover {
+  color: #1DCF9F;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #5A7184;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+header p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #2C3E50;
+}
+
+header .img-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+header .img-container img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: drop-shadow(5px 1px 4px #5A7184);
+          filter: drop-shadow(5px 1px 4px #5A7184);
+}
+
+header .navbar .Sign-up {
+  color: #fff;
+}
+
+header .data {
+  width: 40%;
+  margin-top: 9.375rem;
+}
+
+header .slogan {
+  margin-top: 40%;
+  font-size: 6rem;
+  color: #5A7184;
+}
+
+header .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Sign-up {
+  background-color: #2C3E50;
+  color: #fff;
+  width: 11.25rem;
+  padding: 0.625rem;
+  border-radius: 1.563rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.second_section {
+  background-color: #EFEFEF;
+}
+
+.second_section h2 {
+  font-size: 1.5rem;
+  color: #5A7184;
+  font-weight: 600;
+}
+
+.second_section .txt-container {
+  padding-top: 8%;
+}
+
+.second_section .txt-container h2 {
+  font-size: 1.8rem;
+}
+
+.second_section .txt-container h2 span {
+  color: #179070;
+}
+
+.second_section .txt-container p {
+  width: 65%;
+  font-size: 0.9rem;
+  padding: 0.95rem 0;
+  color: #000000;
+}
+
+.second_section .img-con {
+  margin-top: -60px;
+}
+
+.second_section .img-con img {
+  width: 100%;
+  -webkit-filter: drop-shadow(5px 1px 4px #5A7184);
+          filter: drop-shadow(5px 1px 4px #5A7184);
+}
+
+.third-section {
+  margin-top: 1rem;
+}
+
+.third-section h2 {
+  font-size: 1.8rem;
+  color: #5A7184;
+  text-transform: uppercase;
+  padding: 3rem;
+  font-weight: 600;
+}
+
+.third-section .img-container {
+  z-index: 222;
+  padding: 20px;
+}
+
+.third-section .img-container .change {
+  margin-left: -40px;
+}
+
+.third-section .img-container img {
+  margin-top: 1rem;
+  margin-left: -10rem;
+  height: 75%;
+}
+
+.third-section .card {
+  background-color: #E8FFF9;
+  width: 40rem;
+  height: 25rem;
+  border-radius: 0.625rem;
+  border: none;
+  -webkit-filter: drop-shadow(3px 2px 3px #5A7184);
+          filter: drop-shadow(3px 2px 3px #5A7184);
+  padding: 2.813rem 5rem;
+}
+
+.third-section .card.ch {
+  margin-left: -3rem;
+}
+
+.third-section .card.ch .icon svg {
+  margin-left: 5rem;
+}
+
+.third-section .card.ch .ch-txt {
+  margin-left: 5rem;
+}
+
+.third-section .card h3 {
+  color: #34495E;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.third-section .card h6 {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.third-section .card h6 span {
+  color: #179070;
+  font-weight: bold;
+}
+
+.third-section .card p {
+  color: #000000;
+  font-size: 0.8rem;
+  width: 80%;
+}
+
+.third-section .card .bttn {
+  color: #5A7184;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.third-section .card .icon {
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.third-section .card .icon svg {
+  width: 25%;
+}
+/*# sourceMappingURL=App.css.map */
